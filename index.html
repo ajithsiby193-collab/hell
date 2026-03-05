@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hell - Truth or Dare</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75'>🔥</text></svg>">
+</head>
+<body>
+    <div class="hell-background"></div>
+    
+    <div class="container">
+        <h1 class="title">TRUTH OR DARE</h1>
+        
+        <div class="cards-container">
+            <!-- Truth Card -->
+            <div class="card-wrapper" onclick="openCard(this, 'truth')">
+                <div class="card truth-card">
+                    <div class="card-front truth-front">
+                        <img src="truth-image.jpg" alt="Truth" class="truth-card-image">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dare Card -->
+            <div class="card-wrapper" onclick="openCard(this, 'dare')">
+                <div class="card dare-card">
+                    <div class="card-front dare-front">
+                        <img src="dare-image.jpg" alt="Dare" class="dare-card-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for expanded card -->
+    <div class="modal" id="cardModal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeCard()">&times;</button>
+            <div class="expanded-card">
+                <div class="card-back" id="modalCardBack">
+                    <p id="card-content"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
