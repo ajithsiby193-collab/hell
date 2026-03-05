@@ -1,6 +1,5 @@
 {
-  "buildCommand": "",
-  "outputDirectory": "public",
+  "public": "public",
   "functions": {
     "api/**/*.js": {
       "runtime": "nodejs18.x"
