@@ -1,5 +1,7 @@
 {
+  "public": ".",
   "buildCommand": "npm install",
+  "outputDirectory": ".",
   "functions": {
     "api/**/*.js": {
       "memory": 128,
